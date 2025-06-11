@@ -6,7 +6,7 @@
     $dbname = "test";
 
     try{
-        $conn = new PDO("mysql:host = $host;dbname = $dbname", $user, $pass);
+        $conn = new PDO("mysql:host=$host;dbname=$dbname",$user,$pass);
     }catch(Execption $e){
         echo "error ". $e->getMessage();
     }
